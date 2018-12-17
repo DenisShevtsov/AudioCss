@@ -57,7 +57,6 @@ public class OpenFileDialog extends AlertDialog.Builder {
 
     @Override
     public AlertDialog show() {
-        files.addAll(getFiles(currentPath));
         listView.setAdapter(new FileAdapter(getContext(), files));
         return super.show();
     }
